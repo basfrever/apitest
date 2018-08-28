@@ -1,0 +1,15 @@
+{
+  "name": "node-js-sample",
+  "version": "0.2.0",
+  "description": "A sample Node.js app using Express 4",
+  "main": "ex.js",
+  "scripts": {
+    "start": "node ex.js"
+  },
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+  "author": "Mark Pundsack",
+  "license": "MIT"
+}
+
