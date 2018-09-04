@@ -5,11 +5,12 @@ var cors=require('cors');
 var MongoClient = require('mongodb').MongoClient;
 var url = "mongodb://basavaraj:basu123@ds133388.mlab.com:33388/abt";
 var bodyParser=require('body-parser');
+var path = require('path');
 app.use(cors()); 
 app.use(bodyParser.json());
-app.get('/', function (req, res) {
-
-    res.json({"api status":"running"})
+app.use(express.static(path.join(__dirname, 'dist/myApp')));
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + 'index.html'));
 });
 app.get('/getAllUsersData', function (req, res) {
 MongoClient.connect(url, function(err, db) {
