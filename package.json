@@ -7,12 +7,11 @@
     "start": "node ex.js"
   },
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.16.3"
   },
   "engines": {
     "node": "4.0.0"
   },
-
   "keywords": [
     "node",
     "heroku",
@@ -21,4 +20,3 @@
   "author": "Mark Pundsack",
   "license": "MIT"
 }
-
