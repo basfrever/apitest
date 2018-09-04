@@ -7,7 +7,8 @@
     "start": "node ex.js"
   },
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mongodb": "^3.1.4"
   },
   "engines": {
     "node": "4.0.0"
