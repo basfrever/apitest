@@ -1,5 +1,5 @@
 var express = require('express');
-
+var port = process.env.PORT || 3000;
 var app = express();
 
 app.get('/', function (req, res) {
@@ -8,4 +8,4 @@ app.get('/', function (req, res) {
 
 })
 
-app.listen(1000);
+app.listen(port);
